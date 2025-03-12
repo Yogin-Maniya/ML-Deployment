@@ -68,6 +68,8 @@ def evaluate_model(model, X, y):
         'f1_score': round(np.mean(f1_scores) * 100, 2)
     }
 
+
+
 @app.route('/')
 def home():
     return render_template('index.html')
